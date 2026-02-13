@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🏨 DreamStay Hotel</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Rooms</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Book Your Perfect Room</h2>
+        <button onclick="scrollToRooms()">View Rooms</button>
+    </section>
+
+    <section id="rooms" class="rooms">
+
+        <div class="card">
+            <h3>Deluxe Room</h3>
+            <p>₹1500 / Night</p>
+            <button onclick="bookRoom('Deluxe Room')">Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Standard Room</h3>
+            <p>₹1000 / Night</p>
+            <button onclick="bookRoom('Standard Room')">Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Suite Room</h3>
+            <p>₹2500 / Night</p>
+            <button onclick="bookRoom('Suite Room')">Book Now</button>
+        </div>
+
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: dreamstay@gmail.com</p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
