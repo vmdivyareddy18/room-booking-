@@ -3,25 +3,99 @@
 
 <head>
     <title>Book Room</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #f4f6f9;
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background: white;
+            padding: 35px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .box h2 {
+            margin-bottom: 20px;
+            color: #1e3c72;
+        }
+
+        .box label {
+            display: block;
+            text-align: left;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .box input {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .box button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background: #1e3c72;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .box button:hover {
+            background: #16305f;
+        }
+
+        #msg {
+            margin-top: 15px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h2>Book Your Room</h2>
+    <div class="box">
 
-    <input type="date" id="in"><br><br>
-    <input type="date" id="out"><br><br>
-    <input type="number" id="guest" placeholder="Guests"><br><br>
+        <h2>Room Booking</h2>
 
-    <button onclick="book()">Book</button>
+        <label>Check-in Date</label>
+        <input type="date">
 
-    <p id="msg"></p>
+        <label>Check-out Date</label>
+        <input type="date">
+
+        <label>Guests</label>
+        <input type="number" placeholder="Enter guests">
+
+        <button onclick="book()">Book Now</button>
+
+        <p id="msg"></p>
+
+    </div>
 
     <script>
+
         function book() {
             document.getElementById("msg").innerText =
-                "Booking Submitted Successfully ✅";
+            \"Booking Successful ✅ We will contact you soon.\";
         }
+
     </script>
 
 </body>

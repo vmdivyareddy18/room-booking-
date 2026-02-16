@@ -3,12 +3,18 @@ function register() {
     let u = document.getElementById("newuser").value;
     let p = document.getElementById("newpass").value;
 
+    if (u === "" || p === "") {
+        alert("Fill all details");
+        return;
+    }
+
     localStorage.setItem(u, p);
 
     alert("Registered Successfully ✅");
 
     location.href = "login.html";
 }
+
 
 function login() {
 
@@ -25,6 +31,6 @@ function login() {
 
     } else {
 
-        alert("Invalid Login ❌");
+        alert("Invalid Username or Password ❌");
     }
 }

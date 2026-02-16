@@ -9,13 +9,14 @@
 
     <h2>Admin Dashboard</h2>
 
-    <p>Welcome Admin ✅</p>
+    <p>Welcome! You are logged in ✅</p>
 
-    <div id="data"></div>
+    <button onclick="logout()">Logout</button>
 
     <script>
-        document.getElementById("data").innerHTML =
-            "Bookings will appear here in future";
+        function logout() {
+            location.href = "index.html";
+        }
     </script>
 
 </body>
