@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Room</title>
+</head>
+
+<body>
+
+    <h2>Book Your Room</h2>
+
+    <input type="date" id="in"><br><br>
+    <input type="date" id="out"><br><br>
+    <input type="number" id="guest" placeholder="Guests"><br><br>
+
+    <button onclick="book()">Book</button>
+
+    <p id="msg"></p>
+
+    <script>
+        function book() {
+            document.getElementById("msg").innerText =
+                "Booking Submitted Successfully ✅";
+        }
+    </script>
+
+</body>
+
+</html>
